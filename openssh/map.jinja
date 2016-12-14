@@ -10,7 +10,7 @@ that differ from whats in defaults.yaml
       'server': 'openssh',
       'client': 'openssh',
       'service': 'sshd',
-      'dig_pkg': 'bind-utils',
+      'dig_pkg': 'bind-tools',
     },
     'Debian': {
       'server': 'openssh-server',
@@ -68,6 +68,9 @@ that differ from whats in defaults.yaml
         'Subsystem': 'sftp /usr/libexec/sftp-server',
     },
     'Suse': {
+        'Subsystem': 'sftp /usr/lib/ssh/sftp-server',
+    },
+    'Arch': {
         'Subsystem': 'sftp /usr/lib/ssh/sftp-server',
     },
     'default': {}
